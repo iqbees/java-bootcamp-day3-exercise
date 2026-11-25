@@ -10,12 +10,14 @@ public class Conditional {
         System.out.print("What's your role? ");
         String role = in.nextLine();
 
-        if (role.equals("admin")) {
+        if (role.equalsIgnoreCase("admin")) {
             System.out.println("welcome admin");
-        } else if (role.equals("superuser")) {
+        } else if (role.equalsIgnoreCase("superuser")) {
             System.out.println("welcome superuser");
-        } else {
+        } else if (role.equalsIgnoreCase("user")) {
             System.out.println("welcome user");
+        } else {
+            System.out.println("Invalid role.");
         }
 
         // 2.Take three numbers from the user and print the greatest number.
@@ -76,21 +78,25 @@ public class Conditional {
         System.out.print("Enter your numeric score: ");
         int score = in.nextInt();
 
-        char grade;
-        if (score >= 90) {
-            grade = 'A';
-        } else if (score >= 80) {
-            grade = 'B';
-        } else if (score >= 70) {
-            grade = 'C';
-        } else if (score >= 60) {
-            grade = 'D';
+        if (score < 0 || score > 100) {
+            System.out.println("Please enter a score between 0-100");
         } else {
-            grade = 'F';
-        }
+            char grade;
+            if (score >= 90) {
+                grade = 'A';
+            } else if (score >= 80) {
+                grade = 'B';
+            } else if (score >= 70) {
+                grade = 'C';
+            } else if (score >= 60) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
 
-        System.out.println("Numeric Score: " + score);
-        System.out.println("Letter Grade: " + grade);
+            System.out.println("Numeric Score: " + score);
+            System.out.println("Letter Grade: " + grade);
+        }
 
         // 5. Write a Java program that takes a person's age as input and
         //categorizes them into one of three age categories: "Child,"

@@ -40,8 +40,9 @@ public class Conditional {
         // 3.Write a Java program that generates an integer between 1 and 7
         //and displays the name of the weekday.
 
-        System.out.print("number: ");
-        int number = in.nextInt();
+        int number = (int) (Math.random() * 7) + 1;
+
+        System.out.println("number: ");
 
         switch (number) {
             case 1:

@@ -7,35 +7,35 @@ public class Conditional {
 
         // 1.Write a program that checks the role of the user
 
-//        System.out.print("What's your role? ");
-//        String role = in.nextLine();
-//
-//        if (role.equals("admin")) {
-//            System.out.println("welcome admin");
-//        } else if (role.equals("superuser")) {
-//            System.out.println("welcome superuser");
-//        } else {
-//            System.out.println("welcome user");
-//        }
+        System.out.print("What's your role? ");
+        String role = in.nextLine();
+
+        if (role.equals("admin")) {
+            System.out.println("welcome admin");
+        } else if (role.equals("superuser")) {
+            System.out.println("welcome superuser");
+        } else {
+            System.out.println("welcome user");
+        }
 
         // 2.Take three numbers from the user and print the greatest number.
 
-//        System.out.print("Enter first number: ");
-//        int num1 = in.nextInt();
-//
-//        System.out.print("Enter second number: ");
-//        int num2 = in.nextInt();
-//
-//        System.out.print("Enter third number: ");
-//        int num3 = in.nextInt();
-//
-//        if (num1 > num2 && num1 > num3) {
-//            System.out.println(num1);
-//        } else if (num2 > num3) {
-//            System.out.println(num2);
-//        } else {
-//            System.out.println(num3);
-//        }
+        System.out.print("Enter first number: ");
+        int num1 = in.nextInt();
+
+        System.out.print("Enter second number: ");
+        int num2 = in.nextInt();
+
+        System.out.print("Enter third number: ");
+        int num3 = in.nextInt();
+
+        if (num1 > num2 && num1 > num3) {
+            System.out.println(num1);
+        } else if (num2 > num3) {
+            System.out.println(num2);
+        } else {
+            System.out.println(num3);
+        }
 
         // 3.Write a Java program that generates an integer between 1 and 7
         //and displays the name of the weekday.
